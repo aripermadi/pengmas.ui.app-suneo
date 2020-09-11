@@ -33,8 +33,7 @@ class Wrapper extends StatelessWidget {
                                         : (pageState is OnSuccessPage)
                                             ? SuccessPage()
                                             : (pageState is OnQuestAnswerPage)
-                                                ? QuestAnswerPage(
-                                                    pageState.materi)
+                                                ? QuestAnswerPage()
                                                 : (pageState is OnPopUpPage)
                                                     ? PopUpPage()
                                                     : (pageState

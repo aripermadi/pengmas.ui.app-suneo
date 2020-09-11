@@ -65,9 +65,7 @@ class OnSuccessPage extends PageState {
 }
 
 class OnQuestAnswerPage extends PageState {
-  final Materi materi;
-
-  OnQuestAnswerPage(this.materi);
+  OnQuestAnswerPage();
   @override
   List<Object> get props => null;
 }

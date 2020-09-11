@@ -2,9 +2,6 @@ part of 'pages.dart';
 
 // ignore: must_be_immutable
 class QuestAnswerPage extends StatefulWidget {
-  Materi materi;
-  QuestAnswerPage(this.materi);
-
   @override
   _QuestAnswerPageState createState() => _QuestAnswerPageState();
 }

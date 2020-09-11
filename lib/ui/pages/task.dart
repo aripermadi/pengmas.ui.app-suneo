@@ -130,9 +130,7 @@ class _TaskPageState extends State<TaskPage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25)),
                   onPressed: () {
-                    //context
-                    //.bloc<PageBloc>()
-                    //.add(GoToQuestAnswerPage(widget.materi.));
+                    context.bloc<PageBloc>().add(GoToQuestAnswerPage());
                   },
                 ),
               ),

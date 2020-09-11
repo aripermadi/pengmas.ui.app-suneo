@@ -60,12 +60,8 @@ class GoToSuccessPage extends PageEvent {
 }
 
 class GoToQuestAnswerPage extends PageEvent {
-  final Materi materi;
-  final Category category;
-  final Latihan latihan;
-  GoToQuestAnswerPage(this.materi, this.category, this.latihan);
   @override
-  List<Object> get props => [materi, category, latihan];
+  List<Object> get props => [];
 }
 
 class GoToPopUpPage extends PageEvent {
