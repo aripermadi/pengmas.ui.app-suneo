@@ -37,7 +37,7 @@ class PageBloc extends Bloc<PageEvent, PageState> {
     } else if (event is GoToSuccessPage) {
       yield OnSuccessPage();
     } else if (event is GoToQuestAnswerPage) {
-      yield OnQuestAnswerPage();
+      yield OnQuestAnswerPage(event.materi);
     } else if (event is GoToPopUpPage) {
       yield OnPopUpPage();
     } else if (event is GoToRateOnlyPage) {

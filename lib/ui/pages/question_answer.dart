@@ -3,9 +3,7 @@ part of 'pages.dart';
 // ignore: must_be_immutable
 class QuestAnswerPage extends StatefulWidget {
   Materi materi;
-
-  Category category;
-  QuestAnswerPage(this.materi, this.category);
+  QuestAnswerPage(this.materi);
 
   @override
   _QuestAnswerPageState createState() => _QuestAnswerPageState();
@@ -18,9 +16,9 @@ class _QuestAnswerPageState extends State<QuestAnswerPage> {
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () {
-          context
-              .bloc<PageBloc>()
-              .add(GoToTaskPage(widget.materi, widget.category));
+          //context
+          //  .bloc<PageBloc>()
+          //.add(GoToTaskPage(widget.materi));
 
           return;
         },

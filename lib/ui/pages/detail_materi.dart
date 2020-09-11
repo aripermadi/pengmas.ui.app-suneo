@@ -169,7 +169,6 @@ class _DetailMateriPageState extends State<DetailMateriPage> {
                   subtitle: Text(materi[pos].createdAt),
                 ),
                 onTap: () {
-                  //navigateToMateriDetailPage(context, materi[pos]);
                   context
                       .bloc<PageBloc>()
                       .add(GoToTaskPage(materi[pos], widget.category));
